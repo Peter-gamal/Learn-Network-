@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعليم صيانة الحاسب والشبكات - CCNA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: #4CAF50;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            margin-top: 10px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        .form-container textarea {
+            width: 100%;
+            height: 100px;
+            border-radius: 8px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .form-container button {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: #4CAF50;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #45a049;
+        }
+
+        .download-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-link a {
+            font-size: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .download-link a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>تعليم صيانة الحاسب والشبكات - CCNA</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#computer">صيانة الحاسب الآلي</a></li>
+        <li><a href="#networking">الشبكات</a></li>
+        <li><a href="#ccna">شهادة CCNA</a></li>
+        <li><a href="#contact">اتصل بنا</a></li>
+    </ul>
+</nav>
+
+<section id="computer">
+    <h2>دروس صيانة الحاسب الآلي</h2>
+    <div class="card">
+        <h3>مكونات الحاسب الآلي</h3>
+        <p>تعلم كل شيء عن مكونات الحاسب الآلي وكيفية صيانتها، بدءًا من المعالج (CPU) إلى أجهزة التخزين.</p>
+        <ul>
+            <li>إصلاح المشاكل المتعلقة بالمعالج والذاكرة.</li>
+            <li>استبدال قطع الأجهزة مثل الأقراص الصلبة (HDD/SSD).</li>
+            <li>إعدادات BIOS/UEFI.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>كيفية تركيب الحاسب الآلي</h3>
+        <p>دليل خطوة بخطوة لتركيب جهاز الكمبيوتر من الصفر.</p>
+        <ul>
+            <li>تركيب اللوحة الأم (Motherboard).</li>
+            <li>توصيل مكونات مثل الذاكرة (RAM) والقرص الصلب.</li>
+            <li>تركيب مزود الطاقة (Power Supply).</li>
+        </ul>
+    </div>
+</section>
+
+<section id="networking">
+    <h2>دروس الشبكات</h2>
+    <div class="card">
+        <h3>مقدمة في الشبكات</h3>
+        <p>تعلم أساسيات الشبكات، كيفية تكوين الشبكات المحلية (LAN) والشبكات الواسعة (WAN).</p>
+        <ul>
+            <li>إعدادات الشبكة المنزلية.</li>
+            <li>كيفية إنشاء شبكة باستخدام أجهزة التوجيه (Routers).</li>
+            <li>فهم بروتوكولات TCP/IP والبروتوكولات الأخرى.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>أجهزة الشبكة</h3>
+        <p>تعرف على الأجهزة المختلفة في الشبكات وكيفية تركيبها وصيانتها.</p>
+        <ul>
+            <li>الموجهات (Routers).</li>
+            <li>المفاتيح (Switches).</li>
+            <li>نقاط الوصول (Access Points).</li>
+        </ul>
+    </div>
+</section>
+
+<section id="ccna">
+    <h2>شهادة CCNA</h2>
+    <div class="card">
+        <h3>مقدمة في شهادة CCNA</h3>
+        <p>شهادة CCNA من Cisco توفر معرفة متعمقة في كيفية إدارة وتصميم الشبكات وحمايتها.</p>
+        <ul>
+            <li>أساسيات الشبكات.</li>
+            <li>IP و Subnetting.</li>
+            <li>إعدادات جهاز التوجيه (Routers) والمفاتيح (Switches).</li>
+            <li>الأمان في الشبكات.</li>
+            <li>التشخيص وإصلاح المشاكل.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معانا عبر الموقع</h2>
+    <div class="form-container">
+        <textarea id="comment" placeholder="اكتب سؤالك هنا..."></textarea>
+        <button onclick="postComment()">نشر السؤال</button>
+        <div id="comments-section"></div>
+    </div>
+</section>
+
+<section class="download-link">
+    <p>لتحميل **Packet Tracer** من Cisco، يمكنك زيارة الرابط التالي:</p>
+    <a href="https://www.netacad.com/courses/packet-tracer" target="_blank">تحميل Packet Tracer</a>
+</section>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* تنسيق الأيقونات */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px; /* الحجم المفضل للأيقونات */
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2); /* تكبير الأيقونة عند التمرير عليها */
+        }
+
+        /* تنسيق النص */
+        h1, h2 {
+            text-align: center;
+        }
+
+        .contact-form {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>تواصل معنا</h1>
+</header>
+
+<section id="contact">
+    <h2>أرسل لنا رسالتك</h2>
+    <form action="send_email.php" method="POST" class="contact-form">
+        <textarea name="message" placeholder="اكتب رسالتك هنا..."></textarea>
+        <button type="submit">إرسال الرسالة</button>
+    </form>
+
+    <!-- روابط التواصل الاجتماعي -->
+    <div class="social-icons">
+
+
+        </a>
+        <a href="https://www.instagram.com/world.network.1/profilecard/?igsh=aWM3aWd1dnpoZzY0" target="_blank">
+            <img src="c:\Users\peter\Downloads\Instagram_icon.png" alt="Instagram">
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
+
+<footer>
+    <p>© 2024 تعليم صيانة الحاسب والشبكات</p>
+</footer>
+
+
+
+<script>
+    function postComment() {
+        let commentText = document.getElementById('comment').value.trim();
+        let commentsSection = document.getElementById('comments-section');
+        if (commentText !== "") {
+            let newComment = document.createElement('p');
+            newComment.textContent = commentText;
+            commentsSection.appendChild(newComment);
+            document.getElementById('comment').value = ""; // مسح النص بعد نشره
+        } else {
+            alert("يرجى كتابة تعليق أو سؤال.");
+        }
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استقبال الرسائل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #messages {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>اتصل بنا</h1>
+</header>
+
+<section id="contact">
+    <h2>أرسل لنا رسالتك</h2>
+    <div class="form-container">
+        <textarea id="message" placeholder="اكتب رسالتك هنا..."></textarea>
+        <button onclick="sendMessage()">إرسال الرسالة</button>
+    </div>
+
+    <h3>الرسائل المستلمة:</h3>
+    <div id="messages"></div>
+</section>
+
+<script>
+    function sendMessage() {
+        let messageText = document.getElementById('message').value.trim();
+        let messagesDiv = document.getElementById('messages');
+        if (messageText !== "") {
+            let newMessage = document.createElement('p');
+            newMessage.textContent = messageText;
+            messagesDiv.appendChild(newMessage);
+            document.getElementById('message').value = ""; // مسح النص بعد إرسال الرسالة
+        } else {
+            alert("يرجى كتابة رسالة.");
+        }
+    }
+</script>
+
+</body>
+</html>
