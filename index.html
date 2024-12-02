@@ -408,20 +408,4 @@
     <div id="messages"></div>
 </section>
 
-<script>
-    function sendMessage() {
-        let messageText = document.getElementById('message').value.trim();
-        let messagesDiv = document.getElementById('messages');
-        if (messageText !== "") {
-            let newMessage = document.createElement('p');
-            newMessage.textContent = messageText;
-            messagesDiv.appendChild(newMessage);
-            document.getElementById('message').value = ""; // مسح النص بعد إرسال الرسالة
-        } else {
-            alert("يرجى كتابة رسالة.");
-        }
-    }
-</script>
 
-</body>
-</html>
