@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تعليم صيانة الحاسب والشبكات - CCNA</title>
+    <title>تعليم تكوين الشبكات</title>
     <style>
         * {
             margin: 0;
@@ -16,7 +16,6 @@
             background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
-            padding: 0;
         }
 
         header {
@@ -58,7 +57,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #333;
             margin-bottom: 15px;
         }
@@ -68,23 +67,6 @@
             color: white;
             text-align: center;
             padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
 
         .card {
@@ -92,7 +74,7 @@
             padding: 15px;
             margin: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(6, 64, 225, 0.1);
         }
 
         .card h3 {
@@ -113,41 +95,6 @@
             margin-bottom: 8px;
         }
 
-        .form-container {
-            margin-top: 20px;
-        }
-
-        .form-container textarea {
-            width: 100%;
-            height: 100px;
-            border-radius: 8px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            font-size: 16px;
-            resize: none;
-        }
-
-        .form-container button {
-            margin-top: 10px;
-            width: 100%;
-        }
-
-        .social-icons {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            color: #4CAF50;
-            font-size: 24px;
-            text-decoration: none;
-        }
-
-        .social-icons a:hover {
-            color: #45a049;
-        }
-
         .download-link {
             text-align: center;
             margin-top: 20px;
@@ -162,233 +109,104 @@
         .download-link a:hover {
             color: #45a049;
         }
+
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-icons a img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>تعليم صيانة الحاسب والشبكات - CCNA</h1>
+    <h1>تعليم تكوين الشبكات</h1>
 </header>
 
 <nav>
     <ul>
-        <li><a href="#computer">صيانة الحاسب الآلي</a></li>
-        <li><a href="#networking">الشبكات</a></li>
-        <li><a href="#ccna">شهادة CCNA</a></li>
+        <li><a href="#types">أنواع الشبكات</a></li>
+        <li><a href="#setup">تكوين الشبكات</a></li>
+        <li><a href="#resources">روابط مفيدة</a></li>
         <li><a href="#contact">اتصل بنا</a></li>
     </ul>
 </nav>
 
-<section id="computer">
-    <h2>دروس صيانة الحاسب الآلي</h2>
+<section id="types">
+    <h2>أنواع الشبكات</h2>
     <div class="card">
-        <h3>مكونات الحاسب الآلي</h3>
-        <p>تعلم كل شيء عن مكونات الحاسب الآلي وكيفية صيانتها، بدءًا من المعالج (CPU) إلى أجهزة التخزين.</p>
-        <ul>
-            <li>إصلاح المشاكل المتعلقة بالمعالج والذاكرة.</li>
-            <li>استبدال قطع الأجهزة مثل الأقراص الصلبة (HDD/SSD).</li>
-            <li>إعدادات BIOS/UEFI.</li>
-        </ul>
+        <h3>الشبكات المحلية (LAN)</h3>
+        <p>تُستخدم لربط أجهزة الكمبيوتر داخل نطاق صغير مثل المكاتب.</p>
     </div>
     <div class="card">
-        <h3>كيفية تركيب الحاسب الآلي</h3>
-        <p>دليل خطوة بخطوة لتركيب جهاز الكمبيوتر من الصفر.</p>
-        <ul>
-            <li>تركيب اللوحة الأم (Motherboard).</li>
-            <li>توصيل مكونات مثل الذاكرة (RAM) والقرص الصلب.</li>
-            <li>تركيب مزود الطاقة (Power Supply).</li>
-        </ul>
+        <h3>الشبكات الواسعة (WAN)</h3>
+        <p>تربط الشبكات عبر مناطق جغرافية واسعة باستخدام الإنترنت.</p>
+    </div>
+    <div class="card">
+        <h3>الشبكات اللاسلكية (WLAN)</h3>
+        <p>شبكات محلية تعتمد على تقنية الاتصال اللاسلكي.</p>
+    </div>
+    <div class="card">
+        <h3>الشبكات الافتراضية (VPN)</h3>
+        <p>شبكات آمنة تعتمد على الإنترنت لتوصيل المستخدمين بالشبكات.</p>
     </div>
 </section>
 
-<section id="networking">
-    <h2>دروس الشبكات</h2>
+<section id="setup">
+    <h2>تكوين الشبكات بالتفصيل</h2>
     <div class="card">
-        <h3>مقدمة في الشبكات</h3>
-        <p>تعلم أساسيات الشبكات، كيفية تكوين الشبكات المحلية (LAN) والشبكات الواسعة (WAN).</p>
+        <h3>الأجهزة المستخدمة</h3>
         <ul>
-            <li>إعدادات الشبكة المنزلية.</li>
-            <li>كيفية إنشاء شبكة باستخدام أجهزة التوجيه (Routers).</li>
-            <li>فهم بروتوكولات TCP/IP والبروتوكولات الأخرى.</li>
+            <li><strong>الراوتر (Router):</strong> يُستخدم لتوجيه البيانات بين الشبكات المختلفة.</li>
+            <li><strong>السويتش (Switch):</strong> يربط أجهزة الشبكة المحلية (LAN) ببعضها.</li>
+            <li><strong>نقطة الوصول (Access Point):</strong> تتيح الاتصال اللاسلكي.</li>
+            <li><strong>جدار الحماية (Firewall):</strong> لحماية الشبكة من الهجمات.</li>
         </ul>
     </div>
     <div class="card">
-        <h3>أجهزة الشبكة</h3>
-        <p>تعرف على الأجهزة المختلفة في الشبكات وكيفية تركيبها وصيانتها.</p>
+        <h3>البروتوكولات المستخدمة</h3>
         <ul>
-            <li>الموجهات (Routers).</li>
-            <li>المفاتيح (Switches).</li>
-            <li>نقاط الوصول (Access Points).</li>
+            <li><strong>IP:</strong> لتحديد عناوين الأجهزة.</li>
+            <li><strong>DNS:</strong> لتحويل أسماء النطاقات إلى عناوين IP.</li>
+            <li><strong>DHCP:</strong> لتوزيع عناوين IP تلقائيًا.</li>
+            <li><strong>VPN:</strong> لإنشاء اتصالات آمنة.</li>
         </ul>
+    
+
+<section id="resources">
+    <h2>روابط مفيدة</h2>
+    <div class="download-link">
+        <p>لتحميل <strong>Packet Tracer</strong>:</p>
+        <a href="https://www.netacad.com/courses/packet-tracer" target="_blank">تحميل Packet Tracer</a>
     </div>
-</section>
-
-<section id="ccna">
-    <h2>شهادة CCNA</h2>
-    <div class="card">
-        <h3>مقدمة في شهادة CCNA</h3>
-        <p>شهادة CCNA من Cisco توفر معرفة متعمقة في كيفية إدارة وتصميم الشبكات وحمايتها.</p>
-        <ul>
-            <li>أساسيات الشبكات.</li>
-            <li>IP و Subnetting.</li>
-            <li>إعدادات جهاز التوجيه (Routers) والمفاتيح (Switches).</li>
-            <li>الأمان في الشبكات.</li>
-            <li>التشخيص وإصلاح المشاكل.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>تواصل معانا عبر الموقع</h2>
-    <div class="form-container">
-        <textarea id="comment" placeholder="اكتب سؤالك هنا..."></textarea>
-        <button onclick="postComment()">نشر السؤال</button>
-        <div id="comments-section"></div>
-    </div>
-</section>
-
-<section class="download-link">
-    <p>لتحميل **Packet Tracer** من Cisco، يمكنك زيارة الرابط التالي:</p>
-    <a href="https://www.netacad.com/courses/packet-tracer" target="_blank">تحميل Packet Tracer</a>
-</section>
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        /* تنسيق الأيقونات */
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons img {
-            width: 40px; /* الحجم المفضل للأيقونات */
-            margin: 0 15px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons img:hover {
-            transform: scale(1.2); /* تكبير الأيقونة عند التمرير عليها */
-        }
-
-        /* تنسيق النص */
-        h1, h2 {
-            text-align: center;
-        }
-
-        .contact-form {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        textarea {
-            width: 100%;
-            height: 100px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>تواصل معنا</h1>
-</header>
-
-<section id="contact">
-    <h2>أرسل لنا رسالتك</h2>
-    <form action="send_email.php" method="POST" class="contact-form">
-        <textarea name="message" placeholder="اكتب رسالتك هنا..."></textarea>
-        <button type="submit">إرسال الرسالة</button>
-    </form>
-
-    <!-- روابط التواصل الاجتماعي -->
     <div class="social-icons">
-
-
-        </a>
-        <a href="https://www.instagram.com/world.network.1/profilecard/?igsh=aWM3aWd1dnpoZzY0" target="_blank">
-            <img src="c:\Users\peter\Downloads\Instagram_icon.png" alt="Instagram">
+        <p>تابعنا على إنستجرام:</p>
+        <a href="https://www.instagram.com/world.network.1/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram">
         </a>
     </div>
 </section>
 
-</body>
-</html>
+<section id="contact">
+    <h2>تواصل معنا</h2>
+    <form>
+        <textarea placeholder="اكتب رسالتك هنا..."></textarea>
+        <button>إرسال</button>
+    </form>
+</section>
 
 <footer>
-    <p>© 2024 تعليم صيانة الحاسب والشبكات</p>
+    <p>© 2024 تعليم تكوين الشبكات</p>
 </footer>
-
-
-
-<script>
-    function postComment() {
-        let commentText = document.getElementById('comment').value.trim();
-        let commentsSection = document.getElementById('comments-section');
-        if (commentText !== "") {
-            let newComment = document.createElement('p');
-            newComment.textContent = commentText;
-            commentsSection.appendChild(newComment);
-            document.getElementById('comment').value = ""; // مسح النص بعد نشره
-        } else {
-            alert("يرجى كتابة تعليق أو سؤال.");
-        }
-    }
-</script>
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>استقبال الرسائل</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .form-container {
-            margin-top: 20px;
-        }
-        textarea {
-            width: 100%;
-            height: 100px;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        #messages {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
