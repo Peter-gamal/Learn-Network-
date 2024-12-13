@@ -3,209 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تعليم الشبكات</title>
+    <meta name="description" content="تعلم الشبكات من الأساسيات إلى المتقدمة. تعرف على البروتوكولات والأجهزة وأنواع الشبكات.">
+    <meta name="keywords" content="تعلم الشبكات, شبكات, بروتوكولات, أجهزة الشبكة, LAN, WAN, TCP/IP">
+    <title>تعلم الشبكات</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
 
-        nav ul {
-            list-style-type: none;
+        nav {
+            background-color: #444;
             padding: 10px;
-            display: flex;
-            justify-content: center;
-            background-color: #333;
+            text-align: center;
         }
 
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        nav ul li a {
+        nav a {
             color: white;
+            padding: 10px 20px;
             text-decoration: none;
-            font-size: 18px;
-            padding: 8px 12px;
-            border-radius: 5px;
+            margin: 0 10px;
         }
 
-        nav ul li a:hover {
+        nav a:hover {
             background-color: #555;
         }
 
-        section {
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        h1, h2, h3 {
-            color: #333;
-            margin-bottom: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
+            text-align: center;
+            padding: 10px 0;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 15px;
         }
 
-        .card {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(6, 64, 225, 0.1);
-        }
-
-        .card h3 {
-            color: #4CAF50;
-        }
-
-        .card p {
-            color: #555;
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        .card ul {
-            margin-top: 10px;
-        }
-
-        .card ul li {
-            margin-bottom: 8px;
-        }
-
-        .download-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .download-link a {
-            font-size: 20px;
-            color: #4CAF50;
+        .social-links a {
+            margin: 0 15px;
+            color: #faefef;
+            font-size: 24px;
             text-decoration: none;
         }
 
-        .download-link a:hover {
-            color: #45a049;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .social-icons a img {
-            width: 40px;
-            margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons a img:hover {
-            transform: scale(1.2);
+        .social-links a:hover {
+            color: #0073e6;
         }
     </style>
 </head>
 <body>
 
+<!-- الصفحة الرئيسية -->
 <header>
-    <h1>تعليم تكوين الشبكات</h1>
+    <h1>تعلم الشبكات</h1>
+    <p>كل ما تحتاج لمعرفته عن الشبكات من الأساسيات إلى المتقدم</p>
 </header>
 
 <nav>
-    <ul>
-        <li><a href="#types">أنواع الشبكات</a></li>
-        <li><a href="#setup">تكوين الشبكات</a></li>
-        <li><a href="#resources">روابط مفيدة</a></li>
-        <li><a href="#contact">اتصل بنا</a></li>
-    </ul>
+    <a href="#home">الرئيسية</a>
+    <a href="#lessons">الدروس</a>
+    <a href="#resources">المصادر</a>
+    <a href="#contact">اتصل بنا</a>
 </nav>
 
-<section id="types">
-    <h2>أنواع الشبكات</h2>
-    <div class="card">
-        <h3>الشبكات المحلية (LAN)</h3>
-        <p>تُستخدم لربط أجهزة الكمبيوتر داخل نطاق صغير مثل المكاتب.</p>
-    </div>
-    <div class="card">
-        <h3>الشبكات الواسعة (WAN)</h3>
-        <p>تربط الشبكات عبر مناطق جغرافية واسعة باستخدام الإنترنت.</p>
-    </div>
-    <div class="card">
-        <h3>الشبكات اللاسلكية (WLAN)</h3>
-        <p>شبكات محلية تعتمد على تقنية الاتصال اللاسلكي.</p>
-    </div>
-    <div class="card">
-        <h3>الشبكات الافتراضية (VPN)</h3>
-        <p>شبكات آمنة تعتمد على الإنترنت لتوصيل المستخدمين بالشبكات.</p>
-    </div>
-</section>
+<div class="container" id="home">
+    <h2>مقدمة عن الشبكات</h2>
+    <p>الشبكات هي مجموعة من الأجهزة المتصلة ببعضها البعض لنقل البيانات والمعلومات. تتضمن الشبكات العديد من البروتوكولات والأنواع المختلفة من الأجهزة.</p>
+    <img src="c:\Users\peter\OneDrive\سطح المكتب\download.jpg" alt="شبكة الكمبيوتر" width="auto">
 
-<section id="setup">
-    <h2>تكوين الشبكات بالتفصيل</h2>
-    <div class="card">
-        <h3>الأجهزة المستخدمة</h3>
-        <ul>
-            <li><strong>الراوتر (Router):</strong> يُستخدم لتوجيه البيانات بين الشبكات المختلفة.</li>
-            <li><strong>السويتش (Switch):</strong> يربط أجهزة الشبكة المحلية (LAN) ببعضها.</li>
-            <li><strong>نقطة الوصول (Access Point):</strong> تتيح الاتصال اللاسلكي.</li>
-            <li><strong>جدار الحماية (Firewall):</strong> لحماية الشبكة من الهجمات.</li>
-        </ul>
-    </div>
-    <div class="card">
-        <h3>البروتوكولات المستخدمة</h3>
-        <ul>
-            <li><strong>IP:</strong> لتحديد عناوين الأجهزة.</li>
-            <li><strong>DNS:</strong> لتحويل أسماء النطاقات إلى عناوين IP.</li>
-            <li><strong>DHCP:</strong> لتوزيع عناوين IP تلقائيًا.</li>
-            <li><strong>VPN:</strong> لإنشاء اتصالات آمنة.</li>
-        </ul>
+    <h3>أنواع الشبكات</h3>
+    <ul>
+        <li><b>LAN</b>: شبكة محلية لربط الأجهزة في مساحة صغيرة مثل المكتب أو المنزل.</li>
+        <li><b>WAN</b>: شبكة واسعة تغطي مناطق جغرافية كبيرة.</li>
+        <li><b>MAN</b>: شبكة مدينة تستخدم لربط مكاتب أو مؤسسات في مدينة واحدة.</li>
+    </ul>
+
+    <h3>أهمية الشبكات</h3>
+    <p>تساعد الشبكات على تبادل المعلومات، المشاركة في الموارد، وزيادة كفاءة العمل.</p>
+</div>
+
+<div class="container" id="lessons">
+    <h2>الدروس الأساسية في الشبكات</h2>
+    <h3>تعريف الشبكة</h3>
+    <p>الشبكة هي مجموعة من الأجهزة المترابطة التي يمكنها تبادل البيانات. مثال: الإنترنت.</p>
     
+    <h3>بروتوكولات الشبكة</h3>
+    <ul>
+        <li><b>TCP/IP</b>: بروتوكول يستخدم لتبادل البيانات بين الأنظمة عبر الإنترنت.</li>
+        <li><b>HTTP</b>: بروتوكول يستخدم لنقل صفحات الويب.</li>
+        <li><b>DNS</b>: ip خدمة تحويل أسماء النطاقات إلى عناوين.</li>
+    </ul>
+    
+    <h3>أنواع الأجهزة في الشبكة</h3>
+    <ul>
+        <li><b>الراوتر(Routers)</b>: توجيه البيانات بين الشبكات المختلفة.</li>
+        <li><b>السويتش (Switches)</b>: ربط الأجهزة ضمن الشبكة المحلية (LAN).</li>
+        <li><b>نقاط الوصول (Access Points)</b>: تتيح للأجهزة الاتصال بالشبكة اللاسلكية.</li>
+    </ul>
+</div>
 
-<section id="resources">
-    <h2>روابط مفيدة</h2>
-    <div class="download-link">
-        <p>لتحميل <strong>Packet Tracer</strong>:</p>
-        <a href="https://www.netacad.com/courses/packet-tracer" target="_blank">تحميل Packet Tracer</a>
-    </div>
-    <div class="social-icons">
-        <p>تابعنا على إنستجرام:</p>
-        <a href="https://www.instagram.com/world.network.1/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram">
-        </a>
-    </div>
-</section>
+<div class="container" id="resources">
+    <h2>المصادر المفيدة</h2>
+    <p>فيما يلي بعض المواقع المفيدة للتعلم المزيد عن الشبكات:</p>
+    <ul>
+        <li><a href="https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/enterprise-networking-technology/white-paper-c11-746158.html" target="_blank">دروس Cisco</a></li>
+        <li><a href="https://www.networklessons.com/" target="_blank">دروس في الشبكات من Network Lessons</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">دورات Udemy في الشبكات</a></li>
+    </ul>
+</div>
 
-<section id="contact">
-    <h2>تواصل معنا</h2>
-    <form>
-        <textarea placeholder="اكتب رسالتك هنا..."></textarea>
-        <button>إرسال</button>
-    </form>
-</section>
+<div class="container" id="contact">
+    <h2>معلومات الاتصال</h2>
+    <p>يمكنك التواصل معنا عبر الوسائل التالية:</p>
+    <ul>
+        <li><b>البريد الإلكتروني</b>:worldnetworknet1@gmail.com</li>
+    </ul>
+</div>
 
 <footer>
-    <p>© 2024 تعليم تكوين الشبكات</p>
+    <p>&copy; 2024 تعلم الشبكات</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/world.network.1/profilecard/?igsh=aWM3aWd1dnpoZzY0" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
 </footer>
 
 </body>
